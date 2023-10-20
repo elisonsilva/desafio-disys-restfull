@@ -1,0 +1,39 @@
+@api_route = http://localhost:8989/api/v1
+
+
+# Listing
+GET {{api_route}}/products HTTP/1.1
+
+###
+
+# Show
+GET {{api_route}}/products/1 HTTP/1.1
+
+###
+
+# Create
+POST {{api_route}}/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Welding Machine Operator",
+    "price": "1091.91",
+    "photo": "https:\/\/via.placeholder.com\/640x480.png\/00ff88?text=suscipit"
+}
+
+###
+
+# Update
+PUT {{api_route}}/products/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Wilford Kulas IV",
+    "price": "91.91"
+}
+
+###
+
+# Delete
+DELETE  {{api_route}}/products/1 HTTP/1.1
+

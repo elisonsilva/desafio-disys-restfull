@@ -1,0 +1,27 @@
+@api_route = http://localhost:8989/api/v1
+
+
+# Listing
+GET {{api_route}}/orders HTTP/1.1
+
+###
+
+# Show
+GET {{api_route}}/orders/1 HTTP/1.1
+
+###
+
+# Create
+POST {{api_route}}/orders HTTP/1.1
+content-type: application/json
+
+{
+    "customer_id": 17,
+    "product_id": 58
+}
+
+###
+
+# Delete
+DELETE  {{api_route}}/orders/1 HTTP/1.1
+

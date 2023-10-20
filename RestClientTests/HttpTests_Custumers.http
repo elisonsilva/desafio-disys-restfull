@@ -1,0 +1,44 @@
+@api_route = http://localhost:8989/api/v1
+
+
+# Listing
+GET {{api_route}}/customers HTTP/1.1
+
+###
+
+# Show
+GET {{api_route}}/customers/1 HTTP/1.1
+
+###
+
+# Create
+POST {{api_route}}/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Garrison Ledner I",
+    "email": "mail@example.org",
+    "birthdate": "1984-05-04",
+    "phone": "11926790064",
+    "address": "2878 Johnnie Radial Suite 081\nEast Werner, WA 97111-9686",
+    "complement": "Furnace Operator",
+    "neighborhood": "neighborhood",
+    "zipcode": "06492000"
+}
+
+###
+
+# Update
+PUT {{api_route}}/customers/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Wilford Kulas IV",
+    "birthdate": "1980-05-04"
+}
+
+###
+
+# Delete
+DELETE  {{api_route}}/customers/1 HTTP/1.1
+
