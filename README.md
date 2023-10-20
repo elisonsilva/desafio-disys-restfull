@@ -65,7 +65,7 @@ A API Restful deve contemplar os módulos _**Cliente**_, _**Produto**_ e _**Pedi
 Clone Repositório
 
 ```sh
-git clone -b git@github.com:elisonsilva/desafio-disys-restfull.git desafio-disys-restfull
+git clone git@github.com:elisonsilva/desafio-disys-restfull.git desafio-disys-restfull
 ```
 
 ```sh
